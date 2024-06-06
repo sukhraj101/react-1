@@ -1,17 +1,18 @@
-// App.jsx
+import React from 'react';
 import Header from "./components/Header/Header.jsx";
-import CoreConcepts from "./components/CoreConcepts.jsx";
-import Examples from "./components/Examples.jsx";
+import DataTable from "./components/DataTable.jsx";
+import { Box } from '@mui/material';
+import ActionBar from './components/ActionBar.jsx';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <main>
-        <CoreConcepts />
-        <Examples />
-      </main>
-    </div>
+    <>
+      <Box className="AppWrap">
+        <Header/>
+        <ActionBar className="action-bar" />
+        <DataTable />
+      </Box>
+    </>
   );
 }
 
